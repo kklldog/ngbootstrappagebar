@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body ng-app='pageBarTest'>
+        <div ng-controller="ctrl">
+            <pagebar page-info='pageInfo'></pagebar>
+        </div>
+    </body>
+     <script src="bower_components/jquery/dist/jquery.js"></script>
+     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+     <script src="bower_components/angular/angular.js"></script>
+     <script src="src/ngBootstrapPagebar.js"></script>
+
+    <script>
+        var app = angular.module('pageBarTest',['bootstrap-pagebar']);
+        app.controller('ctrl',function($scope){
+            $scope.pageInfo={
+                pageIndex :5,
+                totalPages:12,
+                showPages :10
+            };
+        });
+    </script>
+</html>
