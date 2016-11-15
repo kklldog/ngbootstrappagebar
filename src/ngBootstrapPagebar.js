@@ -75,7 +75,7 @@
                         setPrepageOrNextpageBtnStatus();
                     }
 
-                    build();
+                 
 
                     scope.activeClass=function(index){
                         if(index===scope.pageInfo.pageIndex){
@@ -128,6 +128,8 @@
                              setPrepageOrNextpageBtnStatus();
                         }
                     }
+
+                    build();
                 } 
         };
     };
