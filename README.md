@@ -21,4 +21,4 @@ a parent scope variable , it should include 3 porperties:
 a parent scope function , when the page number be clicked pagebar will call the fun and pass the index .
 
 ### example
-[sample](https://github.com/kklldog/ngbootstrappagebar/blob/master/sample.html)
+[sample](https://kklldog.github.io/ngbootstrappagebar_sample.html)
