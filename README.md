@@ -3,6 +3,8 @@ a pagebar directive base on bootstrap  angularjs1
 ## Usage
 add bootstrap,angularjs and ngBootstrapPagebar.js then inject into the module .
 ```
+     <pagebar page-info='pageInfo' on-change='changePage'></pagebar>
+ 
      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
      <script src="bower_components/angular/angular.js"></script>
      <script src="src/ngBootstrapPagebar.js"></script>
