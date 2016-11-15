@@ -5,7 +5,16 @@
     </head>
     <body ng-app='pageBarTest'>
         <div ng-controller="ctrl">
-            <pagebar page-info='pageInfo'></pagebar>
+            <br>
+                 if changes 'totalPages','showPages' the pagebar will be rebuild .
+            <br>
+                 if changes 'pageIndex' and pageIndex not in the showing pages the pagebar will be rebuild .
+            <br>
+           pageIndex : <input type="number" ng-model="pageInfo.pageIndex">
+           showPages : <input type="number" ng-model="pageInfo.showPages">
+           totalPages: <input type="number" ng-model="pageInfo.totalPages">
+       
+            <pagebar page-info='pageInfo' on-change='changePage'></pagebar>
         </div>
     </body>
      <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -17,10 +26,14 @@
         var app = angular.module('pageBarTest',['bootstrap-pagebar']);
         app.controller('ctrl',function($scope){
             $scope.pageInfo={
-                pageIndex :5,
+                pageIndex :6,
                 totalPages:12,
-                showPages :10
+                showPages :5
             };
+
+            $scope.changePage=function(index){
+                alert(index);
+            }
         });
     </script>
 </html>
