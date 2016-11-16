@@ -8,7 +8,7 @@ add bootstrap,angularjs and ngBootstrapPagebar.js then inject into the module .
      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
      <script src="bower_components/angular/angular.js"></script>
      <script src="src/ngBootstrapPagebar.js"></script>
-     angular.module('pageBarTest',['bootstrap-pagebar']);
+     angular.module('pageBarTest',['agile.bootstrap-pagebar']);
 ```
 
 ## Attributes
