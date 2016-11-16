@@ -134,6 +134,6 @@
         };
     };
 
-    angular.module('bootstrap-pagebar',[]).directive('pagebar', directive);
+    angular.module('agile.bootstrap-pagebar',[]).directive('pagebar', directive);
 
 }());
